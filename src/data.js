@@ -15,9 +15,10 @@ import vercelIcon from './assets/skills/vercel.svg';
 import postmanIcon from './assets/skills/postman.svg';
 import profileImg from './assets/profile.png';
 
+
 export { profileImg };
 export const RESUME_URL = import.meta.env.VITE_RESUME_URL || '#'; // set VITE_RESUME_URL in .env
-export const GITHUB_USER = 'rachitk29';
+export const GITHUB_USER = 'rachietk';
 export const BANNERS = []; // e.g. ['/banners/1.jpg']. Empty = animated terminal banner. 1 image = static, 2+ = slider every 5s.
 
 export const profile = {
@@ -28,10 +29,10 @@ export const profile = {
 
 export const socials = [
   { id: 'mail', label: 'Email Me', href: `mailto:${profile.email}` },
-  { id: 'twitter', label: 'Twitter', href: 'https://twitter.com/rachitk29' },
-  { id: 'github', label: 'GitHub', href: 'https://github.com/rachitk29' },
-  { id: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/rachitk29/' },
-  { id: 'instagram', label: 'Instagram', href: 'https://www.instagram.com/rachitk.29/' },
+  { id: 'twitter', label: 'Twitter', href: 'https://twitter.com/rachietk' },
+  { id: 'github', label: 'GitHub', href: 'https://github.com/rachietk' },
+  { id: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/rachietk/' },
+  { id: 'instagram', label: 'Instagram', href: 'https://www.instagram.com/rachitkframes/' },
   { id: 'resume', label: 'Resume', href: RESUME_URL },
 ];
 
@@ -49,11 +50,11 @@ export const socials = [
 export const projects = [];
 
 export const experience = [
-  { company: 'Highspring India', role: 'Associate Analyst @Highspring (Google xWF & Walmart)', place: 'Meerut · Hybrid', when: 'Sep 2025 – Sep 2026' },
+  { company: 'Highspring India', role: 'Associate Analyst @Highspring (Google xWF & Walmart)', place: 'Meerut & Gurgaon (Hybrid)', when: 'Sep 2025 – Sep 2026' },
 ];
 export const education = [
-  { school: 'Institute of Engineering and Technology, Lucknow', degree: 'MCA', when: '2026 – Present' },
-  { school: 'Dewan Institute of Management Studies', degree: 'BCA', when: '2022 – 2025' },
+  { school: 'Institute of Engineering and Technology, Lucknow', degree: 'Master of Computer Applications', when: '2026 – Present' },
+  { school: 'Dewan Institute of Management Studies', degree: 'Bachelor of Computer Applications', when: '2022 – 2025' },
 ];
 // [name, category, icon, mono (white icon that needs inverting in light mode)]
 export const skills = [

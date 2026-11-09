@@ -16,7 +16,7 @@ export default function Contact() {
           </motion.a>); })}
       </div>
       <p className="mt-5 text-xs text-mute">Capturing photographs or scribbling a few poems…{' '}
-        <a href="https://www.instagram.com/rachitk.29/" target="_blank" rel="noopener noreferrer" className="text-accent underline-offset-4 hover:underline">click me to see</a></p>
+        <a href="https://www.instagram.com/rachitkframes/" target="_blank" rel="noopener noreferrer" className="text-accent underline-offset-4 hover:underline">click me to see</a></p>
     </Section>
   );
 }

@@ -8,7 +8,7 @@ export default function Skills() {
   const [f, setF] = useState('all');
   const list = skills.filter(s => f === 'all' || s[1] === f);
   return (
-    <Section id="skills" title="Skills" hint="which I use / know how to google" right={<Tabs id="skill-tab" items={tabs} value={f} onChange={setF} />}>
+    <Section id="skills" title="Skills" hint="which i use / know how to google" right={<Tabs id="skill-tab" items={tabs} value={f} onChange={setF} />}>
       <p className="-mt-1 mb-4 text-[12.5px] text-mute">Technologies I’ve learned and worked with. The list keeps growing as I do.</p>
       <motion.div layout className="flex flex-wrap gap-2">
         <AnimatePresence mode="popLayout">
