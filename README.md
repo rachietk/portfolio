@@ -30,6 +30,7 @@ If you'd like to collaborate or have any questions, feel free to reach out:
 
 - 💌 [email for work with me](rachiitk29@gmail.com)  
 - 🔗 [LinkedIn Profile](https://www.linkedin.com/in/rachitkatariya)
+<<<<<<< HEAD
 
 
 
@@ -37,3 +38,5 @@ If you'd like to collaborate or have any questions, feel free to reach out:
 
 
 
+=======
+>>>>>>> 2c4c45b55f732c2b27411253e2ea14736784ff00
