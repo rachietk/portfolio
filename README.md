@@ -1,42 +1,18 @@
-# </> Portfolio Website
+# Rachit Katariya – Portfolio (React + Tailwind, frontend only)
 
-This is my personal **developer portfolio** website built to showcase my skills, projects, experience, and contact information. It's designed to reflect my technical expertise and personal style featuring animations, a galaxy-themed background, and interactive UI elements.
+React (JavaScript) · Vite · Tailwind CSS 3 · Framer Motion. No backend.
 
-## 🚀 Features
+```
+npm install
+npm run dev      # http://localhost:5173
+npm run build    # dist/ → deploy on Vercel / Netlify / GitHub Pages
+```
 
-- Clean and responsive design  
-- Sections for:
-  - About Me  
-  - Skills & Technologies  
-  - Projects (with live links)  
-  - Experience  
-  - Contact Form  
+## Edit your content: `src/data.js`
+- **Projects**: the list is empty. A commented template (title, short description, skills, live demo, code link) sits above `export const projects`.
+- **Banner**: add images to `public/banners/` and list them in `BANNERS`. Empty = animated terminal banner, 1 image = static, 2+ = slider every 5s.
+- **Resume**: copy `.env.example` to `.env` and set `VITE_RESUME_URL` to your Google Drive link.
+- Skills, experience, education, socials, blogs and GitHub username are in the same file. Skill icons are in `src/assets/skills/`.
 
-## 🛠️ Tech Stack
-
-- **React.js**  
-- **Tailwind CSS**  
-- **React Three Fiber (Three.js)**  
-- **Framer Motion**  
-- **Vite**
-
-## 🔗 Live Demo
-
-[click here to see](https://rachitk.vercel.app/)
-
-## 📬 Contact
-
-If you'd like to collaborate or have any questions, feel free to reach out:
-
-- 💌 [email for work with me](rachiitk29@gmail.com)  
-- 🔗 [LinkedIn Profile](https://www.linkedin.com/in/rachitkatariya)
-<<<<<<< HEAD
-
-
-
-
-
-
-
-=======
->>>>>>> 2c4c45b55f732c2b27411253e2ea14736784ff00
+## Features
+Dark/light toggle with a circular reveal (falls back to a soft fade), Ctrl/Cmd+K command palette, live GitHub heatmap, terminal-style background in the page margins (wide screens), glowing “HIRE ME” light along the left page border, and a respect for `prefers-reduced-motion`.

@@ -1,35 +1,34 @@
-import React from "react";
-import Hero from "./components/Hero";
-import Social from "./components/Social";
-import Projects from "./components/Projects";
-import Footer from "./components/Footer";
-import Skills from "./components/Skills";
-import Blogs from "./components/Blogs";
-import WorkExperience from "./components/WorkExperience";
-import { motion } from "framer-motion";
-import "./index.css";
+import { useEffect, useState } from 'react';
+import TerminalBg from './components/TerminalBg';
+import HireMe from './components/HireMe';
+import Dock from './components/Dock';
+import Navbar from './components/Navbar';
+import CommandPalette from './components/CommandPalette';
+import Banner from './components/Banner';
+import Hero from './components/Hero';
+import About from './components/About';
+import Contact from './components/Contact';
+import Projects from './components/Projects';
+import { Education, Experience } from './components/Experience';
+import Skills from './components/Skills';
+import GithubActivity from './components/GithubActivity';
+import Writing from './components/Writing';
+import Footer from './components/Footer';
 
-function App() {
+export default function App() {
+  const [open, setOpen] = useState(false);
+  useEffect(() => {
+    const k = e => { if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); setOpen(o => !o); } };
+    addEventListener('keydown', k); return () => removeEventListener('keydown', k);
+  }, []);
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
-      <Hero />
-      <Social />
-      <Skills />
-      <WorkExperience />
-      <Projects />
-      <Blogs />
-      <Footer />
-    </motion.div>
+    <>
+      <TerminalBg /><HireMe /><Dock />
+      <main id="top" className="mx-auto min-h-screen max-w-[680px] border-x border-line bg-bg">
+        <Navbar onSearch={() => setOpen(true)} /><Banner /><Hero /><About /><Contact /><Projects />
+        <Experience /><Education /><Skills /><GithubActivity /><Writing /><Footer />
+      </main>
+      <CommandPalette open={open} onClose={() => setOpen(false)} />
+    </>
   );
 }
-
-<<<<<<< HEAD
-
-export default App;
-=======
-export default App;
->>>>>>> 2c4c45b55f732c2b27411253e2ea14736784ff00
