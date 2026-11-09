@@ -7,7 +7,7 @@ export default function Hero() {
   useEffect(() => { const t = setInterval(() => setR(x => (x + 1) % profile.roles.length), 3500); return () => clearInterval(t); }, []);
   return (
     <header className="flex flex-wrap items-center gap-4 px-6 py-6">
-      <motion.a href="https://github.com/rachitk29" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.05, rotate: -2 }} transition={{ type: 'spring', stiffness: 300, damping: 18 }}
+      <motion.a href="https://github.com/rachietk" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.05, rotate: -2 }} transition={{ type: 'spring', stiffness: 300, damping: 18 }}
         className="h-20 w-20 flex-none overflow-hidden rounded-full"><img src={profileImg} alt="Rachit" className="h-full w-full object-cover" /></motion.a>
       <div>
         <h1 className="font-serif text-[24px] leading-none tracking-tight">{profile.name}</h1>
