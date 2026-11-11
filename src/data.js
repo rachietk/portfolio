@@ -13,7 +13,8 @@ import githubIcon from './assets/skills/github2.svg';
 import vscodeIcon from './assets/skills/vscode.svg';
 import vercelIcon from './assets/skills/vercel.svg';
 import postmanIcon from './assets/skills/postman.svg';
-import profileImg from './assets/profile.png';
+// import profileImg from './assets/profile.png';
+import profileImg from './assets/vedyanxsh.jpeg';
 
 
 export { profileImg };
